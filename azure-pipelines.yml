@@ -1,5 +1,4 @@
-# ASP.NET
-- task: DotNetCoreCLI@2
+# ASP.NET 
   inputs:
     command: 'build'
 # Build and test ASP.NET projects.
@@ -7,7 +6,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
 trigger:
-- main
+ main
 
 pool:
   vmImage: 'windows-latest'
@@ -19,7 +18,7 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
-
+- task: DotNetCoreCLI@2
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
