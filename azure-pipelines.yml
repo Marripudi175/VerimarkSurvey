@@ -1,5 +1,5 @@
 # ASP.NET 
-  inputs:
+
     command: 'build'
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
